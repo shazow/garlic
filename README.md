@@ -67,6 +67,18 @@ Content-Type: application/json
 *In fact*, the request that the worker receives through garlic is equivalent to the worker getting called directly the same way garlic would be called (but without the extra scheduling features). This makes it very convenient for development environments where you might not want to run a garlic daemon, but simply change the garlic endpoint to be your worker endpoint.
 
 
+## Security
+
+* Bind garlic only locally-accessible hosts. Avoid exposing your garlic
+  scheduler to the public.
+
+If garlic must be exposed to the public,
+
+* Use HTTPS.
+* Use Basic-Auth to authorize clients.
+* Include and verify a secret token in each job payload for workers.
+
+
 ## License
 
 MIT
