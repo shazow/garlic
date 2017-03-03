@@ -11,7 +11,9 @@ Tasks are scheduled as webhooks that get delivered to a worker over HTTP. Worker
 can be implemented on any platform that speaks HTTP. All benefits from existing
 HTTP infrastructure and tooling applies, such as load balancing.
 
-Garlic is written in Go, and it is also a thing that gophers like to eat.
+Garlic schedulers could also be provided as a centralized SaaS. It could be used
+with other webhook services like Zapier and IFTTT. They can be chained or piped
+together.
 
 
 ## Goals
