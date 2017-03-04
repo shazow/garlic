@@ -84,6 +84,7 @@ Suggested special key behaviour:
 - `cron` will parse cron-like syntax and schedule recurring jobs.
 - `id` allows to specify a concrete identifier for the job. If the id already exists, it will replace the existing job.
 - `delete` will delete the value id if it exists (other behaviours like delay also stack).
+- `data` is reserved as an untouched user-supplied envelope for arbitrary payloads for the worker.
 
 Also maybe:
 
